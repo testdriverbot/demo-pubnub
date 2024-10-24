@@ -1,0 +1,26 @@
+version: 4.0.73
+steps:
+  - prompt: >-
+      click on usage and monitoring, scroll down, and assert there are empty
+      charts
+    commands:
+      - command: embed
+        file: testdriver/setup-onboarding.yml
+      - command: focus-application
+        name: Google Chrome
+      - command: hover-text
+        text: Usage & Monitoring
+        description: link in the sidebar
+        action: click
+  - prompt: click on any text on the right pane to focus that frame
+    commands:
+      - command: hover-text
+        text: CURRENT MONTH OVERVIEW
+        description: section header in the right pane
+        action: click
+  - prompt: assert the charts do not have data in them
+    commands:
+      - command: focus-application
+        name: Google Chrome
+      - command: assert
+        expect: the charts do not have data in them

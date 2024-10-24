@@ -7,8 +7,7 @@ steps:
       - command: hover-text
         text: LOGIN
         description: login button in the header
-        action: click and password 2rg2i3B8mWbr!
-    commands:
+        action: click
       - command: hover-text
         text: Email address
         description: email input field
