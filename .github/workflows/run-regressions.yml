@@ -54,7 +54,7 @@ jobs:
             npm install dashcam-chrome
 
             # Replace placeholder email with generated
-            (gc ./testdriver/setup-onboarding.yml) -replace "TD_PASSWORD", '${{ secrets.PUBNUB_PASSWORD }}' | sc -Force ./testdriver/setup-onboarding.yml
+            (gc ./testdriver/setup-onboarding.yml) -replace "TD_PASSWORD", '${{ secrets.TD_PASSWORD }}' | sc -Force ./testdriver/setup-onboarding.yml
 
             Start-Process "C:/Program Files/Google/Chrome/Application/chrome.exe" -ArgumentList "--start-maximized", "--load-extension=$(pwd)/node_modules/dashcam-chrome/build", "${{ env.WEBSITE_URL }}"
             exit
