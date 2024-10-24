@@ -1,0 +1,27 @@
+version: 4.0.73
+steps:
+  - prompt: login with user support@testdriver.ai 
+    commands:
+      - command: focus-application
+        name: Google Chrome
+      - command: hover-text
+        text: LOGIN
+        description: login button in the header
+        action: click and password 2rg2i3B8mWbr!
+    commands:
+      - command: hover-text
+        text: Email address
+        description: email input field
+        action: click
+      - command: type
+        text: support@testdriver.ai
+      - command: hover-text
+        text: Password
+        description: password input field
+        action: click
+      - command: type
+        text: TD_PASSWORD
+      - command: hover-text
+        text: LOG IN
+        description: login button
+        action: click
