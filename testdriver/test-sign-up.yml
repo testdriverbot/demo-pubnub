@@ -1,0 +1,78 @@
+version: 4.0.71
+steps:
+  - prompt: Click on "Try for free" in the header.
+    commands:
+      - command: hover-text
+        text: Try for free
+        description: button in the header
+        action: click
+  - prompt: Fill in the required fields with test data.
+    commands:
+      - command: hover-text
+        text: First name
+        description: first name input field
+        action: click
+      - command: type
+        text: TestFirst
+      - command: hover-text
+        text: Last name
+        description: last name input field
+        action: click
+      - command: type
+        text: TestLast
+      - command: hover-text
+        text: Email
+        description: email input field
+        action: click
+      - command: type
+        text: test@example.com
+      - command: hover-text
+        text: Password
+        description: password input field
+        action: click
+      - command: type
+        text: TestPassword123
+  - prompt: Fill in the required fields with test data.
+    commands:
+      - command: hover-text
+        text: First name
+        description: first name input field
+        action: click
+      - command: type
+        text: TestFirst
+      - command: hover-text
+        text: Last name
+        description: last name input field
+        action: click
+      - command: type
+        text: TestLast
+      - command: hover-text
+        text: Email
+        description: email input field
+        action: click
+      - command: type
+        text: test@example.com
+      - command: hover-text
+        text: Password
+        description: password input field
+        action: click
+      - command: type
+        text: TestPassword123
+  - prompt: Fill in the required fields with test data.
+    commands:
+      - command: hover-text
+        text: First name
+        description: first name input field
+        action: click
+      - command: type
+        text: TestFirst
+      - command: hover-text
+        text: Last name
+        description: last name input field
+        action: click
+      - command: type
+        text: TestLast
+      - command: hover-text
+        text: Email
+        description: email input field
+        action: click
